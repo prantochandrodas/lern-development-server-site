@@ -16,6 +16,11 @@ app.get('/category/:id',(req,res)=>{
     const id=req.params.id;
     const selectedCourse=posts.find(post=>post.category_id===id);
     res.send(selectedCourse);
+});
+app.get('/post/:id',(req,res)=>{
+    const id=req.params.id;
+    const newSelectedItem=posts.find(post=>post.id===id);
+    res.send(newSelectedItem);
 })
 
 
