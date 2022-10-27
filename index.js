@@ -3,7 +3,7 @@ const res = require('express/lib/response');
 const app = express();
 const cors=require('cors')
 const port = process.env.PORT || 5000;
-const categories = require('./data/categories.json');
+const categories = require('./data/Categories.json');
 const posts=require('./data/Post.json');
 app.use(cors());
 app.get('/', (req, res) => {
